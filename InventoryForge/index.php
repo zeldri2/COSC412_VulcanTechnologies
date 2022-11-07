@@ -18,4 +18,3 @@
             <p>Instructions for page goes here</p>
         </div>
         </div>
-<?php include "templates/footer.php"; ?>
