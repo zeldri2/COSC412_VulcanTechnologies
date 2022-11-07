@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" /> <!-- declare characterset UTF-8 which is how your typed characters are converted into machine-readable code --> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PFChangs</title>
+    <title>InventoryForge</title>
     <link rel="stylesheet" href="style.css" /> 
     <style>
 body {
