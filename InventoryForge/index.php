@@ -7,7 +7,8 @@
   <a href="../update.php">Update Items</a>
   <a href="../increase.php">Batch Increase</a>
   <a href="../decrease.php">Batch Decrease</a>
-  <a href="../remove.php">Remove Items</a>
+  <a href="../add.php">Add Item</a>
+  <a href="../remove.php">Remove Item</a>
 </div>
 
 
