@@ -1,2 +1,2 @@
 # COSC412_VulcanTechnologies
-# Zach, Sahra, Nick, Nate 
+# Zach, Sarah, Nick, Nate 
