@@ -67,9 +67,9 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `forgeDB`;
-INSERT INTO `forgeDB`.`main` (`mainID`, `mainName`) VALUES (0, 'Men\'s Clothes');
-INSERT INTO `forgeDB`.`main` (`mainID`, `mainName`) VALUES (1, 'Women\'s Clothes');
-INSERT INTO `forgeDB`.`main` (`mainID`, `mainName`) VALUES (2, 'Accessories');
+INSERT INTO `forgeDB`.`main` (`mainID`, `mainName`) VALUES (1, 'Men\'s Clothes');
+INSERT INTO `forgeDB`.`main` (`mainID`, `mainName`) VALUES (2, 'Women\'s Clothes');
+INSERT INTO `forgeDB`.`main` (`mainID`, `mainName`) VALUES (3, 'Accessories');
 
 COMMIT;
 
