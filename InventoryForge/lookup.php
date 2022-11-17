@@ -3,7 +3,8 @@
       <thead>
 <tr>
 
-  <th>subID</th>
+  <th>mainName</th>
+  <th>subName</th>
   <th>itemID</th>
   <th>itemName</th>
   <th>quantity</th>
@@ -23,7 +24,7 @@
 
     $connection = new PDO($dsn, $username, $password, $options);
 
-    $stmt = $connection->prepare("SELECT * FROM items");
+    $stmt = $connection->prepare("SELECT main.mainName, sub.subName, items.itemID, items.itemName, items.quantity, items.price FROM items JOIN sub ON items.subID = sub.subID JOIN main ON main.mainID = sub.mainID");
     $stmt->execute(); 
     $result = $stmt->fetchAll();
 
@@ -36,7 +37,8 @@
 <tbody>
 <?php foreach ($result as $row) { ?>
   <tr>
-  <td><?php echo escape($row["subID"]); ?></td>
+  <td><?php echo escape($row["mainName"]); ?></td>
+  <td><?php echo escape($row["subName"]); ?></td>
   <td><?php echo escape($row["itemID"]); ?></td>
   <td><?php echo escape($row["itemName"]); ?></td>
   <td><?php echo escape($row["quantity"]); ?></td>
