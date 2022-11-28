@@ -3,22 +3,9 @@
 /**
   * List all items with link to edit
   */
+require "config.php";
+require "common.php";
 
-try {
-  require "config.php";
-  require "common.php";
-
-  $connection = new PDO($dsn, $username, $password, $options);
-
-  $sql = "SELECT main.mainName, sub.subName, items.itemID, items.itemName, items.quantity, items.price FROM items JOIN sub ON items.subID = sub.subID JOIN main ON main.mainID = sub.mainID";
-
-  $statement = $connection->prepare($sql);
-  $statement->execute();
-
-  $result = $statement->fetchAll();
-} catch(PDOException $error) {
-  echo $sql . "<br>" . $error->getMessage();
-}
 if (isset($_POST['submit'])) {
   # Updating item entry
   try {
@@ -38,6 +25,18 @@ if (isset($_POST['submit'])) {
   } catch(PDOException $error) {
     echo $sql . "<br>" . $error->getMessage();
   }  
+}
+try {
+  $connection = new PDO($dsn, $username, $password, $options);
+
+  $sql = "SELECT main.mainName, sub.subName, items.itemID, items.itemName, items.quantity, items.price FROM items JOIN sub ON items.subID = sub.subID JOIN main ON main.mainID = sub.mainID";
+
+  $statement = $connection->prepare($sql);
+  $statement->execute();
+
+  $result = $statement->fetchAll();
+} catch(PDOException $error) {
+  echo $sql . "<br>" . $error->getMessage();
 }
 ?>
 <?php require "templates/header.php"; ?>
