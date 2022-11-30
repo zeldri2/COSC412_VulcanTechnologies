@@ -2,8 +2,8 @@
 <?php include "main.css"; ?>
 }
 </style>
-<h2>Inventory</h2>
-    <table>
+<h2 class="title">Inventory</h2>
+    <table class="db">
       <thead>
 <tr>
 
