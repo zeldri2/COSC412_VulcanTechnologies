@@ -1,0 +1,98 @@
+#remove {
+	color: #721c24;
+	padding: 10px 10px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+    	font-size: 15px;
+    	text-decoration:none;
+}
+
+#remove:hover {
+	background-color: #721c24;
+	color: white;
+}
+
+.homeBtn {
+	background-color: #877300;
+  	color: white;
+  	margin: 20px;
+  	padding: 12px 20px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+    	font-size: 20px;
+    	text-decoration:none;
+	
+}
+
+.homeBtn:hover {
+	background-color: #721c24;
+}
+
+.db{
+	border-collapse: collapse;
+   	margin: 25px;
+    	font-size: 0.9em;
+    	font-family: sans-serif;
+    	min-width: 400px;
+    	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.db thead tr {
+    background-color: #721c24;
+    color: #ffffff;
+    text-align: left;
+}
+
+.db th,
+.db td {
+    padding: 12px 15px;
+}
+
+.db tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.db tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.db tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+form {
+	margin: 10px;
+	padding: 10px;
+}
+
+input, text {
+	color: #721c24
+}
+
+p {
+  	font-family: arial;
+  	font-size: 25px;
+}
+
+h2 {
+	color: #721c24;
+	
+}
+
+h3 {
+	color: #721c24;
+	
+}
+
+.title {
+	margin: 10px;
+	padding: 10px;
+}
+
+h4 {
+	margin: 10px;
+	padding: 10px;
+}	
+

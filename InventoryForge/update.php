@@ -1,3 +1,7 @@
+<style>
+<?php include "main.css"; ?>
+}
+</style>
 <?php
 
 /**
@@ -41,19 +45,19 @@ try {
 ?>
 <?php require "templates/header.php"; ?>
 
-<h2>Update Quantity</h2>
+<h2 class="title">Update Quantity</h2>
 
 
-<h4>Please enter the information to update an item</h4>
+<h4>Please enter the information to update an item.</h4>
     <form method="post">
-      <label for="itemID">itemID</label><br>
+      <label for="itemID">ItemID</label><br>
       <input type="text" name="itemID" id="itemID"><br>
-      <label for="quantity">quantity</label><br>
+      <label for="quantity">Quantity</label><br>
       <input type="text" name="quantity" id="quantity"><br>
       <input type="submit" name="submit" value="Submit">
     </form>
 
-<table>
+<table class="db">
   <thead>
     <tr>
       <th>MainName</th>
@@ -78,6 +82,6 @@ try {
     </tbody>
 </table>
 
-<a href="index.php">Back to home</a>
+<a href="index.php" class="homeBtn">Back to home</a>
 
 <?php require "templates/footer.php"; ?>

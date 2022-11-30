@@ -1,3 +1,7 @@
+<style>
+<?php include "main.css"; ?>
+}
+</style>
 <h2>Inventory</h2>
     <table>
       <thead>
@@ -49,6 +53,6 @@
 </tbody>
 </table>
 
-<a href="index.php">Back to home</a>
+<a href="index.php" class="homeBtn">Back to home</a>
 
 <?php require "templates/footer.php"; ?>

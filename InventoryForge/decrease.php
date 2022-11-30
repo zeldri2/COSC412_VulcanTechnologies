@@ -1,6 +1,10 @@
+<style>
+<?php include "main.css"; ?>
+}
+</style>
 <?php
 
-/** decrease items quanity **/
+/** Batch Decrease**/
 
 require "config.php";
 require "common.php";
@@ -52,39 +56,39 @@ if (isset($_POST['submit'])) {
  
 <?php require "templates/header.php"; ?>
  
- <h2>Decrease at once</h2>
+ <h2 class="title">Batch Decrease</h2>
  
- 	<h4> Enter multiple itemID to decrease multiple quantities at once</h4>
+ 	<h4> Enter multiple itemIDs to decrease multiple quantities at once.</h4>
  	
  	<form method="post">
- 	 		<label for="itemID1">itemID 1</label><br>
+ 	 		<label for="itemID1">ItemID 1</label><br>
       	 <input type="text" name="itemID1" id="itemID1"><br>
-      	 <label for="quantity1">quantity to decrease</label><br>
+      	 <label for="quantity1">Quantity to decrease:</label><br>
       	 <input type="text" name="quantity1" id="quantity1"><br>
       	 
-      	 <label for="itemID2">itemID 2</label><br>
+      	 <label for="itemID2">ItemID 2</label><br>
       	 <input type="text" name="itemID2" id="itemID2"><br>
-      	 <label for="quantity2">quantity to decrease</label><br>
+      	 <label for="quantity2">Quantity to decrease:</label><br>
       	 <input type="text" name="quantity2" id="quantity2"><br>
       	 
-      	 <label for="itemID3">itemID 3</label><br>
+      	 <label for="itemID3">ItemID 3</label><br>
       	 <input type="text" name="itemID3" id="itemID3"><br>
-      	 <label for="quantity3">quantity to decrease</label><br>
+      	 <label for="quantity3">Quantity to decrease:</label><br>
       	 <input type="text" name="quantity3" id="quantity3"><br>
       	 
-      	 <label for="itemID4">itemID 4</label><br>
+      	 <label for="itemID4">ItemID 4</label><br>
       	 <input type="text" name="itemID4" id="itemID4"><br>
-      	 <label for="quantity4">quantity to decrease</label><br>
+      	 <label for="quantity4">Quantity to decrease:</label><br>
       	 <input type="text" name="quantity4" id="quantity4"><br>
       	 
-      	 <label for="itemID5">itemID 5</label><br>
+      	 <label for="itemID5">ItemID 5</label><br>
       	 <input type="text" name="itemID5" id="itemID5"><br>
-      	 <label for="quantity5">quantity to decrease</label><br>
+      	 <label for="quantity5">Quantity to decrease:</label><br>
       	 <input type="text" name="quantity5" id="quantity5"><br>
       	 
-      	 <input type="submit" name="submit" value="submit">
+      	 <input type="submit" name="submit" value="Submit">
       	 
       	</form>
  
 
-<a href="index.php">Back to home</a>
+<a href="index.php" class="homeBtn">Back to home</a>

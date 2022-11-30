@@ -52,9 +52,11 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  font-size: 20px;
+  margin: 10px;
 }
 input[type=submit]:hover {
-  background-color: #ddd;
+  background-color: green;
 }
 .container {
   border-radius: 5px;

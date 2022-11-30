@@ -1,21 +1,24 @@
-<h3>Add Item to Inventory</h3>
-<h4>Please enter the information to create new item</h4>
+<?php include "templates/header.php"; ?>
+<style>
+<?php include "main.css"; ?>
+</style>
+<h2 class="title">Add Item to Inventory</h3>
+<h4>Please enter the information to create a new item entry. When you are done entering your information, please click the "Submit" button, and then click "Back to home.</h4>
     <form method="post">
-	    <label for="subID">subID</label><br>
+	    <label for="subID">SubID</label><br>
 	    <input type="text" name="subID" id="subID"><br>
-	    <label for="itemID">itemID</label><br>
+	    <label for="itemID">ItemID</label><br>
 			<input type="text" name="itemID" id="itemID"><br>
-			<label for="itemName">itemName</label><br>
+			<label for="itemName">Item Name</label><br>
 			<input type="text" name="itemName" id="itemName"><br>
-			<label for="quantity">quantity</label><br>
+			<label for="quantity">Quantity</label><br>
 	    <input type="text" name="quantity" id="quantity"><br>
-	    <label for="price">price</label><br>
+	    <label for="price">Price</label><br>
 			<input type="text" name="price" id="price"><br>
 			<input type="submit" name="submit" value="Submit">
     </form>
-	<h3>When you are done entering your information, please click the green "Submit" button, then click "Back to home"</h3>
 		
-<a href="index.php">Back to home</a>
+<a href="index.php" class="homeBtn">Back to home</a>
 
 <?php
 
